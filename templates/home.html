@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final Project API</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+</head>
+<body>
+
+	<header>
+		<div>
+		<div>
+			<h1>Final Project API</h1>
+		</div>
+		<h2>Fake News Detection with Flask and Firebase</h2>
+		
+	</div>
+	</header>
+
+	<div>
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		<p>Enter Your News Text Body Here</p>
+		<textarea name="news" rows="10" cols="200" style="text-align: right;"></textarea>
+		<br/>
+
+		<input type="submit" value="Predict!">
+		
+	    </form>
+
+        <form action="{{ url_for('predict')}}" method="GET">
+        <p>Get Historical Data</p>
+    
+        <input type="submit" value="Get Historical Data!">
+            
+        </form>
+
+		
+	</div>
+
+	
+	
+
+</body>
+</html>

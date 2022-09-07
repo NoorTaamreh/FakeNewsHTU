@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final Project API</title>
+</head>
+<body>
+	<header>
+		<div>
+		<div>
+			<h1>Final Project API</h1>
+		</div>
+		<h2>Fake News Detection with Flask and Firebase</h2>
+		
+	</div>
+	</header>
+	<h2><b>Historical Data</b></h2>
+	<div class="results">
+
+
+		
+    {% for p in predictions %}
+        <h2> {{ p.val()["Prediction Time"] }} </h2>
+        <h3> {{ p.val()["Text"] }} </h3>
+        <h3> {{ p.val()["Flag"] }} </h3>
+      {% endfor %}
+
+	</div>
+
+</body>
+</html>

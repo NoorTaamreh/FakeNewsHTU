@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final Project API</title>
+</head>
+<body>
+	<header>
+		<div>
+		<div>
+			<h1>Final Project API</h1>
+		</div>
+		<h2>Fake News Detection with Flask and Firebase</h2>
+		
+	</div>
+	</header>
+	<h2><b>Results for News</b></h2>
+	<div class="results">
+
+
+		
+	{% if flag == "Fake" %}
+	<h2 style="color:red;">Fake</h2>
+	{% elif flag == "Real" %}
+	<h2 style="color:blue;">Real</h2>
+	{% endif %}
+
+	</div>
+
+</body>
+</html>
